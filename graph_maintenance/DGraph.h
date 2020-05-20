@@ -77,6 +77,8 @@ public:
     void tarjanStrongConnect(int v, int& index, stack<VertexID>& q, vector< int >& indexPerNode,
                              vector< int >& lowlinkPerNode, vector< bool >& onStack, vector< vector<VertexID> >& SCCs);
     int computeDiameter();
+    EdgeSet* getEdgeset();
+    LabelSet* getlabelset();
 
 };
 
